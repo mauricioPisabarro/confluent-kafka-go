@@ -1,8 +1,23 @@
 # Confluent's Golang client for Apache Kafka
 
+
+# v2.2.0
+
+This is a feature release.
+
+## Fixes
+
+ * Fixes a nil pointer bug in the protobuf `Serializer.Serialize()`, caused due to
+   an unchecked error (#997, @baganokodo2022).
+ * Fixes incorrect protofbuf FileDescriptor references (#989, @Mrmann87).
+
+
 ## v2.1.1
 
-This is a maintenance release:
+This is a maintenance release.
+
+It is strongly recommended to update to v2.1.1 if v2.1.0 is being used, as it
+fixes a critical issue in the consumer (#980).
 
 confluent-kafka-go is based on librdkafka v2.1.1, see the
 [librdkafka v2.1.1 release notes](https://github.com/confluentinc/librdkafka/releases/tag/v2.1.1)
